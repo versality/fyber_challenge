@@ -12,6 +12,7 @@
 /tmp/
 
 spec/cassettes
+.env
 
 ## Specific to RubyMotion:
 .dat*
