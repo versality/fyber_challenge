@@ -1,0 +1,35 @@
+.header {
+    min-height: 50px;
+    border-bottom: 1px solid #d7d7d7;
+
+    box-shadow: 0 0 5px 0 rgba(119, 119, 119, 0.5);
+    -moz-box-shadow: 0 0 5px 0 rgba(119, 119, 119, 0.5);
+    -webkit-box-shadow: 0 0 5px 0 rgba(119, 119, 119, 0.5);
+
+    line-height: 2.2em;
+
+    color: #832222;
+}
+
+.pure-button {
+    background-color: #FF9E1B;
+}
+
+.pure-form-aligned .pure-controls {
+    margin-left: 50px;
+}
+
+form {
+    width: 185px;
+    margin: 50px auto 0 auto;
+}
+
+h2 {
+    margin-top: 50px;
+    text-align: center;
+    color: grey;
+}
+
+table {
+    width: 100%;
+}

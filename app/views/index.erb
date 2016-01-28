@@ -1,3 +1,7 @@
+<% if defined? no_offers_found %>
+    <h2>No offers found</h2>
+<% end %>
+
 <div class="form-wrapper">
   <form class="pure-form pure-form-aligned" accept-charset="UTF-8" action="/offers/search" method="get" >
     <fieldset>
@@ -10,7 +14,7 @@
       </div>
 
       <div class="pure-control-group">
-        <input name="page" type="text" placeholder="Page">
+        <input name="page" type="number" placeholder="Page">
       </div>
 
       <div class="pure-controls">
@@ -18,8 +22,4 @@
       </div>
     </fieldset>
   </form>
-
-  <% if defined? no_offers_found %>
-      <h1>No offers found</h1>
-  <% end %>
 </div>
