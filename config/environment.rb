@@ -13,7 +13,7 @@ require 'sinatra'
 require 'sinatra/base'
 require 'sinatra/reloader' if development?
 require 'erb'
-require 'dotenv'
+require 'dotenv' if development? || test?
 require 'json'
 
 # Load dotenv file
