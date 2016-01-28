@@ -38,7 +38,13 @@ module Fyber
       uri.query = URI.encode_www_form(@params)
       res       = Net::HTTP.get_response(uri)
 
-      JSON.parse(res.body)['offers']
+      response_body = JSON.parse(res.body)
+
+      if response_body['code'] == 'OK'
+        response_body['offers']
+      else
+        false
+      end
     end
 
     def prepare_request
